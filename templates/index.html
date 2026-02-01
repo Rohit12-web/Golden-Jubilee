@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50th Anniversary | Rajawat Family</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #FFF5E1;
+            --navy: #1A374D;
+            --gold: #D4AF37;
+        }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--cream); 
+            color: var(--navy); 
+            overflow-x: hidden;
+        }
+        .royal-font { font-family: 'Cinzel', serif; }
+        .cursive { font-family: 'Great Vibes', cursive; }
+        .gold-text { color: var(--gold); }
+        .gold-bg { background: linear-gradient(145deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); }
+        
+        #carousel { 
+            scroll-behavior: smooth; 
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+        }
+        #carousel::-webkit-scrollbar { display: none; }
+
+        .gold-btn {
+            transition: all 0.3s ease;
+            touch-action: manipulation;
+        }
+        .gold-btn:active {
+            transform: scale(0.92);
+            filter: brightness(1.1);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="flex justify-center pt-8 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]">
+        <img src="https://cdn-icons-png.flaticon.com/512/2415/2415294.png" class="h-24 w-24 opacity-90 drop-shadow-md" alt="Lord Ganesha">
+    </div> -->
+
+    <header class="text-center pt-4 px-6">
+        <p class="royal-font font-bold text-lg">|| श्री गणेशाय नमः ||</p><br>
+        <p class="royal-font font-bold text-lg">ॐ साईं राम</p>
+        <div class="italic text-sm leading-loose my-4">
+            विघ्न हरण मंगल करण, श्री गणपति महाराज |<br>
+            प्रथम निमंत्रण आपको, पूरण करियो काज ||
+        </div>
+        <p class="gold-text text-xs italic leading-relaxed uppercase tracking-widest text-[10px] mb-8">With the immense grace of Kuldevi Jamwai Mataji</p>
+        
+        <div class="px-6 py-4">
+            <h3 class="royal-font text-gold gold-text text-xl font-bold tracking-widest uppercase mb-2">A Golden Journey</h3>
+            <p class="text-xs italic leading-relaxed opacity-90">
+                Half a century of shared dreams, laughter, and an unbreakable bond. 
+                As we commemorate the 50th Wedding Anniversary, we celebrate a legacy 
+                of love that has inspired generations.
+            </p>
+        </div>
+    </header>
+
+    <section class="text-center py-6 px-4">
+        <h2 class="cursive text-4xl gold-text mb-2">Th. Sa,</h2>
+        <h1 class="royal-font text-3xl font-bold tracking-tighter uppercase">Pratap Singh Rajawat</h1>
+        <p class="cursive text-4xl gold-text my-2">&</p>
+        <!-- <h2 class="cursive text-4xl gold-text mb-2">Thakuranisahiba</h2> -->
+        <h1 class="royal-font text-3xl font-bold tracking-tighter uppercase">Kushraj Kanwar</h1>
+        
+        <div class="mt-8 px-8 text-sm italic opacity-80 leading-relaxed">
+            "Warmly invite you to be a part of a journey that celebrates 50 years of love and togetherness."
+        </div>
+    </section>
+
+  <section class="relative w-[95%] max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-2xl border-4 border-white">
+    <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+        <div class="snap-center shrink-0 w-full h-[60vh] md:h-[500px] lg:h-[600px]">
+            <img src="/static/nana_nani.png" class="w-full h-full object-contain bg-stone-100" alt="Nana and Nani">
+        </div>
+        <div class="snap-center shrink-0 w-full h-[60vh] md:h-[500px] lg:h-[600px]">
+            <img src="/static/nana.png" class="w-full h-full object-contain bg-stone-100" alt="Nana">
+        </div>
+        <div class="snap-center shrink-0 w-full h-[60vh] md:h-[500px] lg:h-[600px]">
+            <img src="/static/nani.png" class="w-full h-full object-contain bg-stone-100" alt="Nani">
+        </div>
+    </div>
+</section>
+
+    <section class="py-12 px-6 text-center">
+        <h3 class="cursive text-4xl gold-text mb-6">Celebration Details</h3>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md border border-amber-100 space-y-6">
+            <div>
+                <h4 class="gold-text font-bold text-sm uppercase leading-relaxed">Date & Time</h4>
+                <p class="font-bold text-lg uppercase">February 18th, 2026</p>
+                <p class="font-bold text-lg uppercase">07:30 PM Onwards</p>
+            </div>
+
+            <div>
+                <h4 class="gold-text font-bold text-sm uppercase leading-relaxed">Venue</h4>
+                <p class="font-bold text-sm uppercase leading-relaxed">
+                    OM PALACE, DEOLI ARAB ROAD,<br>BORKHERA, KOTA
+                </p>
+            </div>
+            
+            <div class="h-48 w-full rounded-lg overflow-hidden shadow-inner border relative">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.8711664177243!2d75.89736417516248!3d25.173859777726305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9bf8d30e0001%3A0xc49d01f98d5c4176!2sOm%20Palace%20Marriage%20Garden!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <a href="https://maps.google.com/?cid=13279438996971494805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" 
+            target="_blank" 
+            class="inline-block mt-2 text-[10px] font-bold text-amber-700 underline uppercase tracking-widest active:scale-95 transition">
+    Click here to Open in Google Maps
+</a>
+        </div>
+    </section>
+
+    <section class="mx-6 p-8 rounded-3xl text-center shadow-xl border border-amber-200" style="background-color: #fdfaf3;">
+        <p class="italic text-sm text-amber-900 mb-6">
+            "Your gracious presence will add to the joy and blessings of this golden celebration. Your presence is deeply appreciated."
+        </p>
+        
+        <button id="rsvpBtn" onclick="sendRSVP()" 
+                class="gold-btn gold-bg text-black font-bold py-4 px-12 rounded-full uppercase tracking-wider shadow-lg">
+            Accept Invite
+        </button>
+        
+        <div id="statusMsg" class="mt-4 text-sm font-medium text-amber-900 hidden">
+            Thank you! We look forward to welcoming you.
+        </div>
+    </section>
+
+    <section class="py-12 text-center px-4">
+    <h3 id="countdownHeading" class="royal-font gold-text text-xl mb-6 uppercase tracking-widest">Countdown to Celebration</h3>
+    
+    <div id="timer" class="flex justify-center gap-2">
+        <div class="bg-slate-900 text-white p-3 rounded-lg min-w-[70px]">
+            <span id="days" class="block text-2xl font-bold">00</span>
+            <small class="text-[10px] uppercase">Days</small>
+        </div>
+        <div class="bg-slate-900 text-white p-3 rounded-lg min-w-[70px]">
+            <span id="hours" class="block text-2xl font-bold">00</span>
+            <small class="text-[10px] uppercase">Hours</small>
+        </div>
+        <div class="bg-slate-900 text-white p-3 rounded-lg min-w-[70px]">
+            <span id="mins" class="block text-2xl font-bold">00</span>
+            <small class="text-[10px] uppercase">Mins</small>
+        </div>
+        <div class="bg-slate-900 text-white p-3 rounded-lg min-w-[70px]">
+            <span id="secs" class="block text-2xl font-bold">00</span>
+            <small class="text-[10px] uppercase">Secs</small>
+        </div>
+    </div>
+
+    <div id="celebrationMessage" class="hidden animate-bounce">
+        <h2 class="royal-font gold-text text-4xl font-bold uppercase tracking-tighter">Celebration Time!</h2>
+        <p class="cursive text-2xl mt-2 text-navy">Happy 50th Anniversary</p>
+    </div>
+</section>
+
+<section class="mx-6 p-8 rounded-3xl shadow-xl border border-amber-200 mt-8" style="background-color: #fdfaf3;">
+    <h3 class="royal-font text-xl font-bold gold-text mb-4 text-center">Blessings & Wishes</h3>
+    <div class="space-y-4">
+        <input type="text" id="wishName" placeholder="Your Name" required 
+               class="w-full p-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500">
+        
+        <textarea id="wishText" placeholder="Leave your blessings here..." required rows="4"
+                  class="w-full p-3 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+        
+        <button id="wishBtn" onclick="submitWish()" class="gold-bg w-full text-black font-bold py-3 rounded-full uppercase tracking-widest shadow-md active:scale-95 transition">
+    Send Blessings
+</button>
+    </div>
+</section>
+
+
+    <section class="py-12 text-center bg-[var(--cream)] border-t border-amber-200">
+        <p class="cursive text-3xl gold-text mb-4">Hosted with Love by</p>
+        <h4 class="royal-font text-xl font-bold tracking-tighter uppercase">Pradeep Singh Rajawat</h4>
+        <p class="royal-font text-xl font-bold tracking-tighter my-2">&</p>
+        <h4 class="royal-font text-xl font-bold tracking-tighter uppercase">Sunita Rathore</h4>
+    </section>
+
+    <footer class="p-6 text-center text-[10px] uppercase tracking-widest opacity-60">
+        Created with 💗 by Rohitash
+    </footer>
+
+    <script>
+        // --- Countdown Logic ---
+        const eventDate = new Date("Feb 18, 2026 19:30:00").getTime();
+    
+    const countdownInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const gap = eventDate - now;
+        
+        // When the time hits or passes
+        if(gap <= 0) {
+            clearInterval(countdownInterval); // Stop the timer
+            document.getElementById('timer').classList.add('hidden');
+            document.getElementById('countdownHeading').classList.add('hidden');
+            document.getElementById('celebrationMessage').classList.remove('hidden');
+            return;
+        }
+
+        // Standard Timer Updates
+        document.getElementById('days').innerText = String(Math.floor(gap / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        document.getElementById('hours').innerText = String(Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+        document.getElementById('mins').innerText = String(Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        document.getElementById('secs').innerText = String(Math.floor((gap % (1000 * 60)) / 1000)).padStart(2, '0');
+    }, 1000);
+
+        // --- Auto-Carousel Logic ---
+        const carousel = document.getElementById('carousel');
+        setInterval(() => {
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 5) {
+                carousel.scrollLeft = 0;
+            } else {
+                carousel.scrollLeft += carousel.offsetWidth;
+            }
+        }, 2000);
+
+        // --- RSVP Logic ---
+        function sendRSVP() {
+    const btn = document.getElementById('rsvpBtn');
+    const msg = document.getElementById('statusMsg');
+    
+    fetch('/accept', { method: 'POST' })
+    .then(res => res.json())
+    .then(data => {
+        if(data.success) {
+            // Updated to use a beautiful themed pop-up
+            Swal.fire({
+                title: 'Invitation Accepted!',
+                text: 'Thank you! Your presence is highly appreciated.',
+                icon: 'success',
+                background: '#FFF5E1', // Your Cream background
+                color: '#1A374D',      // Your Navy text color
+                confirmButtonColor: '#D4AF37', // Your Gold button color
+                confirmButtonText: 'See you there!',
+                customClass: {
+                    title: 'Poppins',
+                    popup: 'rounded-3xl border-4 border-white shadow-2xl'
+                }
+            });
+
+            btn.innerText = "Accepted!";
+            btn.disabled = true;
+            btn.style.opacity = "0.7";
+            msg.classList.remove('hidden');
+        }
+    })
+    .catch(err => {
+        Swal.fire({
+            title: 'Oops!',
+            text: 'Something went wrong. Please try again later.',
+            icon: 'error',
+            confirmButtonColor: '#1A374D'
+        });
+    });
+}
+    function submitWish() {
+    const nameInput = document.getElementById('wishName');
+    const messageInput = document.getElementById('wishText');
+    const wishBtn = document.getElementById('wishBtn');
+
+    if (!nameInput.value || !messageInput.value) {
+        Swal.fire({ 
+            icon: 'error', 
+            title: 'Oops...', 
+            text: 'Please fill in both fields!',
+            confirmButtonColor: '#1A374D'
+        });
+        return;
+    }
+
+    fetch('/post-wish', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            guestName: nameInput.value, 
+            guestMessage: messageInput.value 
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            // 1. Change Button State
+            wishBtn.innerText = "Blessing Sent!";
+            wishBtn.disabled = true;
+            wishBtn.style.opacity = "0.7";
+
+            // 2. Trigger Confetti Celebration
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.8 },
+                colors: ['#D4AF37', '#1A374D', '#ffffff']
+            });
+
+            // 3. Show Success Pop-up
+            Swal.fire({
+                title: 'Blessings Received!',
+                text: 'Thank you for your message.',
+                icon: 'success',
+                confirmButtonColor: '#D4AF37',
+                background: '#FFF5E1',
+                color: '#1A374D'
+            });
+
+            // 4. Clear the inputs
+            nameInput.value = '';
+            messageInput.value = '';
+        }
+    });
+}
+    </script>
+</body>
+</html>
